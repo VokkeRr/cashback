@@ -1,25 +1,25 @@
+const all;
 const regularP = 300000;
-const RegP = 0.01
-const caash = regularP * RegP;
+const RegPPersen = 0.01;
+const caashReg = regularP * RegPPersen;
 
-const incPur = 10000
-const incPurPer = 0.05
-
-
-const spePur = 5000
-const spePurPer = 0.03
-
-let caash = regularP * RegP + incPur *incPurPer + 
-spePur * spePurPer
+const incPur = 10000;
+const incPurPer = 0.05;
+const cashInc = incPur * incPurPer;
 
 
-const caashlimi = 3000
-if (caash > caashlimi)
+const spePur = 5000;
+const spePurPer = 0.03;
+const cashspe = spePur * spePurPer;
+
+let all = caashReg + cashInc + cashspe;
+
+const caashlimi = 3000;
+
+if (all > caashlimi)
 {
-    caash = caashlimi;
+    all = caashlimi;
 }
-else 
-{
-    const caash = regularP * RegP;
-}
-console.log (caash);
+
+console.log (all);
+
